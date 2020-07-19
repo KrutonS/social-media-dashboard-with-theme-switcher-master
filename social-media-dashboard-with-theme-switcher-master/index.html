@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="./themes/dark-theme.css"> -->
+  <title>Frontend Mentor | [Challenge Name Here]</title>
+<script>
+  function change_theme()
+  {
+    if(document.body.className=='light')
+      document.body.className='dark';
+    else
+      document.body.className='light';
+  }
+</script>
+
+</head>
+<body class="light">
+
+  <!-- Social Media Dashboard
+  Total Followers: 23,004
+
+  Dark Mode
+
+  
+
+  @nathanf
+  1987
+  Followers
+  12 Today
+
+  @nathanf
+  1044
+  Followers
+  99 Today
+
+  @realnathanf
+  11k
+  Followers
+  1099 Today
+
+  Nathan F.
+  8239
+  Subscribers
+  144 Today
+
+
+
+  Overview - Today
+
+  Page Views
+  87
+  3%
+
+  Likes
+  52
+  2%
+
+  Likes
+  5462
+  2257%
+
+  Profile Views
+  52k
+  1375%
+
+  Retweets
+  117
+  303%
+
+  Likes
+  507
+  553%
+
+  Likes
+  107
+  19%
+
+  Total Views
+  1407
+  12% -->
+  
+  <header>
+  </header>
+  <main>
+    <h1>Social Media Dashboard</h1>
+    <div class="theme">
+      <strong>Dark Mode</strong>
+      <label class="switch">
+        <input type="checkbox" onclick="change_theme()">
+        <span class="slider"></span>
+      </label>
+    </div>
+    <h4>Total Followers: 23,004</h4>
+    <div class="grid-container big">
+      <div class="card" id="fb">
+        <section>
+          <h4>@nathanf</h4>
+          <h1>1987</h1>
+          <h5>followers</h5>
+          <h6 class="increase" id="new-fb">12 Today</h6>
+        </section>
+      </div>
+      <div class="card" id="tw">
+        <section>
+          <h4>@nathanf</h4>
+          <h1>1044</h1>
+          <h5>followers</h5>
+          <h6 class="increase" id="new-tw">99 Today</h6>
+        </section>
+      </div>
+      <div class="card" id="insta">
+        <section>
+          <h4>@realnathanf</h4>
+          <h1>11k</h1>
+          <h5>followers</h5>
+          <h6 class="increase" id="new-insta">1099 Today</h6>
+        </section>
+      </div>
+      <div class="card" id="yt">
+        <section>
+          <h4>Nathan F.</h4>
+          <h1>8239</h1>
+          <h5>Subscribers</h5>
+          <h6 class="decrease" id="new-yt">144 Today</h6>
+        </section>
+      </div>
+    </div>
+    <h1>Overview - Today</h1>
+    <div class="grid-container">
+      <div class="card fb">
+        <h4>Page Views</h4>
+        <h1 id="fb-views">87</h1>
+        <h6 class="increase" id="fb-views%">3%</h6>
+      </div>
+      <div class="card fb">
+        <h4>Likes</h4>
+        <h1 id="fb-likes">52</h1>
+        <h6 class="decrease" id="fb-likes%">2%</h6>
+      </div>
+      <div class="card insta">
+        <h4>Likes</h4>
+        <h1 id="insta-likes">5462</h1>
+        <h6 class="increase" id="insta-likes%">2257%</h6>
+      </div>
+      <div class="card insta">
+        <h4>Profile Views</h4>
+       <h1 id="insta-views">52k</h1>
+       <h6 class="increase" id="insta-views%">1375%</h6>
+      </div>
+      <div class="card tw">
+        <h4>Retweets</h4>
+        <h1 id="tw-retweets">117</h1>
+        <h6 class="increase" id="tw-retweets%">303%</h6>
+      </div>
+      <div class="card tw">
+        <h4>Likes</h4>
+        <h1 id="tw-likes">507</h1>
+        <h6 class="increase" id="tw-likes%">553%</h6>
+        </div>
+      <div class="card yt">
+        <h4>Likes</h4>
+        <h1 id="yt-likes">107</h1>
+        <h6 class="decrease" id="yt-likes%">19%</h6>
+      </div>
+      <div class="card yt">
+        <h4>Total Views</h4>
+        <h1 id="yt-views">1407</h1>
+        <h6 class="decrease" id="yt-views%">12%</h6>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

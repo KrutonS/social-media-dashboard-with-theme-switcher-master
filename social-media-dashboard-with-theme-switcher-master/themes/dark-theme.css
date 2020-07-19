@@ -1,0 +1,19 @@
+body.dark
+{
+    color:white;
+    background-color: hsl(230, 17%, 14%);
+}
+.dark header{background-color: hsl(232, 19%, 15%);}
+.dark .card, .dark .card>section{background-color: hsl(228, 28%, 20%);}
+.dark h4,.dark h5{color:hsl(228, 34%, 66%)}
+
+
+
+body.light
+{
+    background-color: white;
+    color: hsl(230, 17%, 14%);
+}
+.light header{background-color: hsl(225, 100%, 98%);}
+.light .card, .dark .card>section{background-color: hsl(227, 47%, 96%);}
+.light h4,.light h5{color:hsl(228, 12%, 44%)}
